@@ -10,7 +10,7 @@ from db_connector import execute_query, get_all_faculty_names
 # 1. CONFIGURATION
 # ==========================================
 # Replace with your actual Groq API Key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "API Key Here"
 
 llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
@@ -125,4 +125,5 @@ def ask_college_bot(user_question):
 if __name__ == "__main__":
     # Test 1: Vector Question (Should work now!)
     print("\n--- TEST VECTOR ---")
+
     print(ask_college_bot("What are the research works about Piyush Sir?"))
